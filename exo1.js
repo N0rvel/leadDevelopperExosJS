@@ -1,10 +1,10 @@
-var scanf = require('scanf');
+const scanf = require('scanf');
 
 console.log('Saisir une chaine de caractère');
-var chaine1 = scanf('%s');
+const chaine1 = scanf('%s');
 
 console.log('Saisir une deuxième chaine de caractère');
-var chaine2 = scanf('%s');
+const chaine2 = scanf('%s');
 
 if (chaine1.length === 2 * chaine2.length){
     console.log("La chaine 1 (longueur: %s) est deux fois plus longue que la chaine 2 (longueur: %s)", chaine1.length, chaine2.length)
