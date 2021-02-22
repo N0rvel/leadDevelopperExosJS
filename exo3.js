@@ -19,6 +19,8 @@ tableau.forEach(function(item, index){
     moy += item;
 });
 moy /= tableau.length;
+
+// Affichage des résultats
 console.log(tableau);
 console.log("Indice du plus grand nombre: %s", indiceGrandNombre);
 console.log("Moyenne: %s", moy);
