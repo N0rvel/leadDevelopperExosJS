@@ -48,12 +48,13 @@ class Hippopotamus {
     }
 
     fight(hyppopotamus2){
+        console.log("COMBAT entre %s et %s", this.getName(), hyppopotamus2.getName())
         if (this.getTusksSize() < hyppopotamus2.getTusksSize()){
-            return hyppopotamus2;
+            console.log("%s gagne le combat !", hyppopotamus2.getName());
         } else if (this.getTusksSize() > hyppopotamus2.getTusksSize()){
-            return this;
+            console.log("%s gagne le combat !", this.getName());
         } else {
-            return "Draw";
+            console.log("Personne ne gagne le combat !");
         }
     }
 
@@ -73,8 +74,11 @@ class Hippopotamus {
 }
 
 let hyppopotame1 = new Hippopotamus("Hyppo1", 100, 12);
-let hyppopotame2 = new Hippopotamus("Hyppo2", 120, 10);
+let hyppopotame2 = new Hippopotamus("Hyppo2", 120, 12);
+let hyppopotame3 = new Hippopotamus("Hyppo3", 120, 22);
 console.log(hyppopotame1.toString());
 console.log(hyppopotame2.toString());
-console.log("%s gagne le combat !", hyppopotame1.fight(hyppopotame2).getName());
+console.log(hyppopotame3.toString());
+hyppopotame1.fight(hyppopotame2);
+hyppopotame2.fight(hyppopotame3);
 hyppopotame1.cycleDeVie();
