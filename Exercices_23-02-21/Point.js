@@ -1,3 +1,4 @@
+
 class Point {
     #x = 0;
     #y = 0;
@@ -27,9 +28,12 @@ class Point {
         return "x: " + this.getX() + ", y: " + this.getY();
     }
 }
+module.exports = Point;
 
+/*
 let point = new Point(1,2);
 console.log(point.toString());
 point.setX(5.3);
 point.setY(-7);
 console.log(point.toString());
+*/
